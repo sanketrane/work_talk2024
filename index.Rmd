@@ -1,0 +1,61 @@
+---
+title: "Through the Mosaic-Glass:"
+subtitle: Identifying the Origins of Immune Variability in Our Responses to Diseases
+author: By Sanket Rane
+output:
+  xaringan::moon_reader:
+    self-comtained: true
+    css: [xaringan-themer.css, xaringan-custom.css]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      nature:
+      titleSlideClass: [top, center]
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>
+---
+
+count: false
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE,
+  comment = NA, dpi = 300,
+  fig.align = "center", out.width = "100%", cache = FALSE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(primary_color = "#035AA6", secondary_color = "#006789",
+  text_font_google = google_font("Noto Sans"),
+  header_font_google = google_font("Yanone Kaffeesatz"),
+  code_font_google = google_font("Fira Mono")
+)
+```
+
+
+```{r child='intro.Rmd'}
+```
+
+---
+
+```{r child='Tcell_work.Rmd'}
+```
+
+
+---
+
+```{r child='Bcell_work.Rmd'}
+```
+
+
+---
+
+```{r child='rnnvae.Rmd'}
+```
+
